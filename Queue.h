@@ -1,4 +1,5 @@
 // Queue.h
+
 #ifndef QUEUE_H
 #define QUEUE_H
 
@@ -8,90 +9,74 @@
 #include <stdexcept>
 
 /**
- * @brief A thread-safe queue supporting a maximum size and blocking/non-blocking pop operations.
+ * @brief A thread-safe queue that supports a maximum size and blocking/non-blocking pop operations.
  * 
- * @tparam T The type of the elements stored in the queue.
+ * @tparam T The type of elements stored in the queue.
  */
 template <typename T>
 class Queue {
 public:
-    // Constructor to initialize the queue with a fixed size.
-    Queue(int size) : maxSize(size), front(0), back(0), count(0) {
-        buffer = new T[size];
-    }
+    /**
+     * @brief Constructs a queue with a specified maximum size.
+     * 
+     * @param size The maximum number of elements the queue can hold.
+     */
+    explicit Queue(int size);
 
-    // Destructor to clean up allocated memory.
-    ~Queue() {
-        delete[] buffer;
-    }
+    /**
+     * @brief Destroys the queue and frees allocated memory.
+     */
+    ~Queue();
 
-    // Push a new element into the queue. Drops the oldest element if the queue is full.
-    void Push(T element) {
-        std::unique_lock<std::mutex> lock(mtx);
+    /**
+     * @brief Pushes an element to the queue. If the queue is full, the oldest element is dropped.
+     * 
+     * @param element The element to be added to the queue.
+     */
+    void Push(const T& element);
 
-        if (count == maxSize) {
-            // Drop the oldest element
-            front = (front + 1) % maxSize;
-            --count;
-        }
+    /**
+     * @brief Pops an element from the queue. Blocks indefinitely if the queue is empty.
+     * 
+     * @return T The element removed from the front of the queue.
+     */
+    T Pop();
 
-        // Add the new element
-        buffer[back] = element;
-        back = (back + 1) % maxSize;
-        ++count;
+    /**
+     * @brief Pops an element from the queue with a timeout. Throws an exception if the timeout expires.
+     * 
+     * @param milliseconds The timeout duration in milliseconds.
+     * @return T The element removed from the front of the queue.
+     * @throws std::runtime_error If the queue is empty after the timeout.
+     */
+    T PopWithTimeout(int milliseconds);
 
-        // Notify one waiting thread
-        condVar.notify_one();
-    }
+    /**
+     * @brief Returns the current number of elements in the queue.
+     * 
+     * @return int The number of elements currently stored in the queue.
+     */
+    int Count() const;
 
-    // Pop an element from the queue. Blocks indefinitely if the queue is empty.
-    T Pop() {
-        std::unique_lock<std::mutex> lock(mtx);
-
-        // Wait until the queue is not empty
-        condVar.wait(lock, [this] { return count > 0; });
-
-        T value = buffer[front];
-        front = (front + 1) % maxSize;
-        --count;
-
-        return value;
-    }
-
-    // Pop an element from the queue with a timeout. Throws an exception if the queue is empty after the timeout.
-    T PopWithTimeout(int milliseconds) {
-        std::unique_lock<std::mutex> lock(mtx);
-        if (!condVar.wait_for(lock, std::chrono::milliseconds(milliseconds), [this] { return count > 0; })) {
-            throw std::runtime_error("Timeout: no element available to pop.");
-        }
-
-        T value = buffer[front];
-        front = (front + 1) % maxSize;
-        --count;
-
-        return value;
-    }
-
-    // Get the current number of elements in the queue.
-    int Count() const {
-        std::unique_lock<std::mutex> lock(mtx);
-        return count;
-    }
-
-    // Get the maximum size of the queue.
-    int Size() const {
-        return maxSize;
-    }
+    /**
+     * @brief Returns the maximum size of the queue.
+     * 
+     * @return int The maximum number of elements the queue can hold.
+     */
+    int Size() const;
 
 private:
-    T* buffer;                    // Dynamic array to store queue elements
-    int maxSize;                  // Maximum number of elements the queue can hold
-    int front;                    // Index of the front element
-    int back;                     // Index of the back element
-    int count;                    // Current number of elements in the queue
+    T* buffer;                      ///< Dynamic array to store queue elements.
+    int maxSize;                    ///< Maximum number of elements the queue can hold.
+    int front;                      ///< Index of the front element.
+    int back;                       ///< Index of the back element.
+    int count;                      ///< Current number of elements in the queue.
 
-    mutable std::mutex mtx;       // Mutex for thread-safe access
-    std::condition_variable condVar; // Condition variable for blocking operations
+    mutable std::mutex mtx;         ///< Mutex for thread-safe access.
+    std::condition_variable condVar; ///< Condition variable for blocking operations.
 };
 
+#include "Queue.hpp" // Include the implementation file
+
 #endif // QUEUE_H
+

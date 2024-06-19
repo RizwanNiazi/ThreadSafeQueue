@@ -4,14 +4,18 @@
 #include <thread>
 #include <stdexcept>
 
-// Test that a new queue is empty and has the correct size
+/**
+ * @brief Test the initial state of the queue.
+ */
 TEST(QueueTest, InitialState) {
     Queue<int> q(3);
     EXPECT_EQ(q.Count(), 0);
     EXPECT_EQ(q.Size(), 3);
 }
 
-// Test pushing elements into the queue
+/**
+ * @brief Test pushing elements into the queue.
+ */
 TEST(QueueTest, Push) {
     Queue<int> q(3);
     q.Push(1);
@@ -23,7 +27,9 @@ TEST(QueueTest, Push) {
     EXPECT_EQ(q.Count(), 3);
 }
 
-// Test popping elements from the queue
+/**
+ * @brief Test popping elements from the queue.
+ */
 TEST(QueueTest, Pop) {
     Queue<int> q(3);
     q.Push(1);
@@ -33,7 +39,9 @@ TEST(QueueTest, Pop) {
     EXPECT_EQ(q.Pop(), 2);
 }
 
-// Test the PopWithTimeout method
+/**
+ * @brief Test the PopWithTimeout method.
+ */
 TEST(QueueTest, PopWithTimeout) {
     Queue<int> q(3);
 
@@ -47,13 +55,17 @@ TEST(QueueTest, PopWithTimeout) {
     writer.join();
 }
 
-// Test that PopWithTimeout throws an exception when the timeout expires
+/**
+ * @brief Test that PopWithTimeout throws an exception when the timeout expires.
+ */
 TEST(QueueTest, PopWithTimeoutThrows) {
     Queue<int> q(3);
     EXPECT_THROW(q.PopWithTimeout(100), std::runtime_error);
 }
 
-// Test thread safety by pushing and popping in different threads
+/**
+ * @brief Test thread safety by pushing and popping in different threads.
+ */
 TEST(QueueTest, ThreadSafety) {
     Queue<int> q(3);
 
@@ -73,3 +85,4 @@ TEST(QueueTest, ThreadSafety) {
     writer.join();
     reader.join();
 }
+
