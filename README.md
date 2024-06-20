@@ -25,11 +25,12 @@ ThreadSafeQueue/
 ## Build Instructions
 
 1. Ensure you have CMake installed (minimum version 3.10).
-2. Clone this repository.
-3. Navigate to the cloned directory and create a build directory.
-4. Inside the build directory, run `cmake ..` followed by `make` to build the executables.
-5. Run `./test_Queue` to execute unit tests.
-6. Run `./main` to execute the main program example.
+2. Ensure you have git and g++ installed.
+3. Clone this repository.
+4. Navigate to the cloned directory and create a build directory.
+5. Inside the build directory, run `cmake ..` followed by `make` to build the executables.
+6. Run `./test_Queue` to execute unit tests.
+7. Run `./main` to execute the main program example.
 
 ## Usage
 
