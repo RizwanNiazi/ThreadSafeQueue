@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/ubuntu/Desktop/ThreadSafeQueue
+CXX_INCLUDES = -I/home/ubuntu/Desktop/ThreadSafeQueue/include
 
 CXX_FLAGS = -std=gnu++14 -DGTEST_HAS_PTHREAD=1
 

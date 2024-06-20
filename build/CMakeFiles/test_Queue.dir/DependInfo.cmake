@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ubuntu/Desktop/ThreadSafeQueue/test_Queue.cpp" "CMakeFiles/test_Queue.dir/test_Queue.cpp.o" "gcc" "CMakeFiles/test_Queue.dir/test_Queue.cpp.o.d"
+  "/home/ubuntu/Desktop/ThreadSafeQueue/test/test_Queue.cpp" "CMakeFiles/test_Queue.dir/test/test_Queue.cpp.o" "gcc" "CMakeFiles/test_Queue.dir/test/test_Queue.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

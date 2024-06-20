@@ -2,12 +2,25 @@
 
 This project demonstrates a thread-safe queue implementation in C++ using mutexes and condition variables.
 
-## Structure
+## Directory Structure
 
-- `Queue.h`: Header file containing the `Queue` template class declaration.
-- `Queue.hpp`: Implementation file containing definitions of `Queue` member functions.
-- `test_Queue.cpp`: GoogleTest unit tests for `Queue` functionalities.
-- `main.cpp`: Example usage of `Queue` in a multithreaded environment.
+ThreadSafeQueue/
+├── include/ # Header files
+│ ├── Queue.h
+│ ├── Queue.hpp
+├── src/ # Source files
+│ ├── main.cpp
+├── test/ # Unit tests
+│ ├── test_Queue.cpp
+├── build/ # Build directory (generated files)
+├── CMakeLists.txt # CMake build configuration
+├── LICENSE # License file (MIT License)
+├── README.md # Project documentation
+
+- `include/Queue.h`: Header file containing the `Queue` template class declaration.
+- `include/Queue.hpp`: Implementation file containing definitions of `Queue` member functions.
+- `tests/test_Queue.cpp`: GoogleTest unit tests for `Queue` functionalities.
+- `src/main.cpp`: Example usage of `Queue` in a multithreaded environment.
 
 ## Build Instructions
 

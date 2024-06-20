@@ -152,53 +152,53 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
-test_Queue.o: test_Queue.cpp.o
-.PHONY : test_Queue.o
+test/test_Queue.o: test/test_Queue.cpp.o
+.PHONY : test/test_Queue.o
 
 # target to build an object file
-test_Queue.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_Queue.dir/build.make CMakeFiles/test_Queue.dir/test_Queue.cpp.o
-.PHONY : test_Queue.cpp.o
+test/test_Queue.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_Queue.dir/build.make CMakeFiles/test_Queue.dir/test/test_Queue.cpp.o
+.PHONY : test/test_Queue.cpp.o
 
-test_Queue.i: test_Queue.cpp.i
-.PHONY : test_Queue.i
+test/test_Queue.i: test/test_Queue.cpp.i
+.PHONY : test/test_Queue.i
 
 # target to preprocess a source file
-test_Queue.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_Queue.dir/build.make CMakeFiles/test_Queue.dir/test_Queue.cpp.i
-.PHONY : test_Queue.cpp.i
+test/test_Queue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_Queue.dir/build.make CMakeFiles/test_Queue.dir/test/test_Queue.cpp.i
+.PHONY : test/test_Queue.cpp.i
 
-test_Queue.s: test_Queue.cpp.s
-.PHONY : test_Queue.s
+test/test_Queue.s: test/test_Queue.cpp.s
+.PHONY : test/test_Queue.s
 
 # target to generate assembly for a file
-test_Queue.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_Queue.dir/build.make CMakeFiles/test_Queue.dir/test_Queue.cpp.s
-.PHONY : test_Queue.cpp.s
+test/test_Queue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_Queue.dir/build.make CMakeFiles/test_Queue.dir/test/test_Queue.cpp.s
+.PHONY : test/test_Queue.cpp.s
 
 # Help Target
 help:
@@ -211,12 +211,12 @@ help:
 	@echo "... test"
 	@echo "... main"
 	@echo "... test_Queue"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... test_Queue.o"
-	@echo "... test_Queue.i"
-	@echo "... test_Queue.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... test/test_Queue.o"
+	@echo "... test/test_Queue.i"
+	@echo "... test/test_Queue.s"
 .PHONY : help
 
 
