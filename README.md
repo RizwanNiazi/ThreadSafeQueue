@@ -4,19 +4,6 @@ This project demonstrates a thread-safe queue implementation in C++ using mutexe
 
 ## Directory Structure
 
-ThreadSafeQueue/
-├── include/ # Header files
-│ ├── Queue.h
-│ ├── Queue.hpp
-├── src/ # Source files
-│ ├── main.cpp
-├── test/ # Unit tests
-│ ├── test_Queue.cpp
-├── build/ # Build directory (generated files)
-├── CMakeLists.txt # CMake build configuration
-├── LICENSE # License file (MIT License)
-├── README.md # Project documentation
-
 - `include/Queue.h`: Header file containing the `Queue` template class declaration.
 - `include/Queue.hpp`: Implementation file containing definitions of `Queue` member functions.
 - `tests/test_Queue.cpp`: GoogleTest unit tests for `Queue` functionalities.
@@ -31,6 +18,25 @@ ThreadSafeQueue/
 5. Inside the build directory, run `cmake ..` followed by `make` to build the executables.
 6. Run `./test_Queue` to execute unit tests.
 7. Run `./main` to execute the main program example.
+
+### Building the Project
+
+To build the project, follow these steps:
+
+1. Create a build directory:
+   ```bash
+   mkdir build
+   cd build
+2. Run CMake to configure the build system
+   ```bash
+   cmake ..
+   make
+3. Run Test Cases
+   ```bash
+   ./test_Queue
+4. Run `./main`
+   ```bash
+   ./main
 
 ## Usage
 
