@@ -6,37 +6,43 @@ This project demonstrates a thread-safe queue implementation in C++ using mutexe
 
 - `include/Queue.h`: Header file containing the `Queue` template class declaration.
 - `include/Queue.hpp`: Implementation file containing definitions of `Queue` member functions.
-- `tests/test_Queue.cpp`: GoogleTest unit tests for `Queue` functionalities.
 - `src/main.cpp`: Example usage of `Queue` in a multithreaded environment.
+- `tests/test_Queue.cpp`: GoogleTest unit tests for `Queue` functionalities.
+- `CMakeLists.txt`: CMake configuration file for building the project.
+- `run.sh`: Script to automate the build and test process.
+- `LICENSE`: License file (MIT License).
+
+## Features
+
+- **Thread-Safe Operations**: Uses mutexes and condition variables to ensure safe multi-threaded access.
+- **Blocking and Timeout Pop**: Provides methods to block indefinitely or throw an exception after a timeout if the queue is empty.
+- **Overflow Handling**: Drops the oldest element when the queue is full and a new element is pushed.
+- **Template Class**: Supports different data types through a template design.
+- **Unit Testing**: Comprehensive unit tests using GoogleTest.
 
 ## Build Instructions
 
-1. Ensure you have CMake installed (minimum version 3.10).
-2. Ensure you have git and g++ installed.
-3. Clone this repository.
-4. Navigate to the cloned directory and create a build directory.
-5. Inside the build directory, run `cmake ..` followed by `make` to build the executables.
-6. Run `./test_Queue` to execute unit tests.
-7. Run `./main` to execute the main program example.
+### Prerequisites
 
-### Building the Project
+- **CMake**: Minimum version 3.10.
+- **G++**: A C++ compiler.
+- **Git**: For cloning the repository.
 
-To build the project, follow these steps:
+### Automated Build and Run
 
-1. Create a build directory:
+For a streamlined setup, you can use the provided `run.sh` script. This script automates the process of installing dependencies, building the project, and running tests.
+
+Follow these steps:
+
+1. Clone `ThreadSafeQueue` directory:
    ```bash
-   mkdir build
-   cd build
-2. Run CMake to configure the build system
+   git clone https://github.com/RizwanNiazi/ThreadSafeQueue.git
+   cd ThreadSafeQueue
+
+2. Remove existing build and then create build directory:
    ```bash
-   cmake ..
-   make
-3. Run Test Cases
-   ```bash
-   ./test_Queue
-4. Run `./main`
-   ```bash
-   ./main
+   chmod +x run.sh
+   ./run.sh
 
 ## Usage
 

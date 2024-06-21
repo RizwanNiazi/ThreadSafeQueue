@@ -1,10 +1,10 @@
-Start testing: Jun 19 20:45 UTC
+Start testing: Jun 22 02:23 PKT
 ----------------------------------------------------------
 1/1 Testing: QueueTest
 1/1 Test: QueueTest
-Command: "/home/ubuntu/Desktop/ThreadSafeQueue/build/test_Queue"
-Directory: /home/ubuntu/Desktop/ThreadSafeQueue/build
-"QueueTest" start time: Jun 19 20:45 UTC
+Command: "/home/rizwan-pc/Desktop/ThreadSafeQueue/build/test_Queue"
+Directory: /home/rizwan-pc/Desktop/ThreadSafeQueue/build
+"QueueTest" start time: Jun 22 02:23 PKT
 Output:
 ----------------------------------------------------------
 Running main() from ./googletest/src/gtest_main.cc
@@ -18,22 +18,22 @@ Running main() from ./googletest/src/gtest_main.cc
 [ RUN      ] QueueTest.Pop
 [       OK ] QueueTest.Pop (0 ms)
 [ RUN      ] QueueTest.PopWithTimeout
-[       OK ] QueueTest.PopWithTimeout (101 ms)
+[       OK ] QueueTest.PopWithTimeout (100 ms)
 [ RUN      ] QueueTest.PopWithTimeoutThrows
-[       OK ] QueueTest.PopWithTimeoutThrows (101 ms)
+[       OK ] QueueTest.PopWithTimeoutThrows (100 ms)
 [ RUN      ] QueueTest.ThreadSafety
-[       OK ] QueueTest.ThreadSafety (255 ms)
-[----------] 6 tests from QueueTest (458 ms total)
+[       OK ] QueueTest.ThreadSafety (251 ms)
+[----------] 6 tests from QueueTest (452 ms total)
 
 [----------] Global test environment tear-down
-[==========] 6 tests from 1 test suite ran. (459 ms total)
+[==========] 6 tests from 1 test suite ran. (453 ms total)
 [  PASSED  ] 6 tests.
 <end of output>
-Test time =   0.47 sec
+Test time =   0.46 sec
 ----------------------------------------------------------
 Test Passed.
-"QueueTest" end time: Jun 19 20:45 UTC
+"QueueTest" end time: Jun 22 02:23 PKT
 "QueueTest" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Jun 19 20:45 UTC
+End testing: Jun 22 02:23 PKT

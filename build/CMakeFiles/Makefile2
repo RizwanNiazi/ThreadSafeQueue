@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/Desktop/ThreadSafeQueue
+CMAKE_SOURCE_DIR = /home/rizwan-pc/Desktop/ThreadSafeQueue
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/Desktop/ThreadSafeQueue/build
+CMAKE_BINARY_DIR = /home/rizwan-pc/Desktop/ThreadSafeQueue/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -83,14 +83,14 @@ clean: CMakeFiles/main.dir/clean
 CMakeFiles/test_Queue.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_Queue.dir/build.make CMakeFiles/test_Queue.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_Queue.dir/build.make CMakeFiles/test_Queue.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/Desktop/ThreadSafeQueue/build/CMakeFiles --progress-num=3,4 "Built target test_Queue"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/rizwan-pc/Desktop/ThreadSafeQueue/build/CMakeFiles --progress-num=3,4 "Built target test_Queue"
 .PHONY : CMakeFiles/test_Queue.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_Queue.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Desktop/ThreadSafeQueue/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rizwan-pc/Desktop/ThreadSafeQueue/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_Queue.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Desktop/ThreadSafeQueue/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rizwan-pc/Desktop/ThreadSafeQueue/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_Queue.dir/rule
 
 # Convenience name for target.
@@ -109,14 +109,14 @@ CMakeFiles/test_Queue.dir/clean:
 CMakeFiles/main.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubuntu/Desktop/ThreadSafeQueue/build/CMakeFiles --progress-num=1,2 "Built target main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/rizwan-pc/Desktop/ThreadSafeQueue/build/CMakeFiles --progress-num=1,2 "Built target main"
 .PHONY : CMakeFiles/main.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Desktop/ThreadSafeQueue/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rizwan-pc/Desktop/ThreadSafeQueue/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/Desktop/ThreadSafeQueue/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rizwan-pc/Desktop/ThreadSafeQueue/build/CMakeFiles 0
 .PHONY : CMakeFiles/main.dir/rule
 
 # Convenience name for target.

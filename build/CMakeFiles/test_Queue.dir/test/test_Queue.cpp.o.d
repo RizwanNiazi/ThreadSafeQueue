@@ -1,5 +1,5 @@
 CMakeFiles/test_Queue.dir/test/test_Queue.cpp.o: \
- /home/ubuntu/Desktop/ThreadSafeQueue/test/test_Queue.cpp \
+ /home/rizwan-pc/Desktop/ThreadSafeQueue/test/test_Queue.cpp \
  /usr/include/stdc-predef.h /usr/include/gtest/gtest.h \
  /usr/include/c++/13/cstddef \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -257,9 +257,9 @@ CMakeFiles/test_Queue.dir/test/test_Queue.cpp.o: \
  /usr/include/gtest/gtest-test-part.h \
  /usr/include/gtest/gtest-typed-test.h \
  /usr/include/gtest/gtest_pred_impl.h /usr/include/gtest/gtest_prod.h \
- /home/ubuntu/Desktop/ThreadSafeQueue/include/Queue.h \
+ /home/rizwan-pc/Desktop/ThreadSafeQueue/include/Queue.h \
  /usr/include/c++/13/chrono \
- /home/ubuntu/Desktop/ThreadSafeQueue/include/Queue.hpp \
- /home/ubuntu/Desktop/ThreadSafeQueue/include/Queue.h \
+ /home/rizwan-pc/Desktop/ThreadSafeQueue/include/Queue.hpp \
+ /home/rizwan-pc/Desktop/ThreadSafeQueue/include/Queue.h \
  /usr/include/c++/13/thread /usr/include/c++/13/bits/std_thread.h \
  /usr/include/c++/13/bits/this_thread_sleep.h

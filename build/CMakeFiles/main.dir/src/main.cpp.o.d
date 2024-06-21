@@ -1,5 +1,5 @@
 CMakeFiles/main.dir/src/main.cpp.o: \
- /home/ubuntu/Desktop/ThreadSafeQueue/src/main.cpp \
+ /home/rizwan-pc/Desktop/ThreadSafeQueue/src/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/13/iostream \
  /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -145,7 +145,7 @@ CMakeFiles/main.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc \
- /home/ubuntu/Desktop/ThreadSafeQueue/include/Queue.h \
+ /home/rizwan-pc/Desktop/ThreadSafeQueue/include/Queue.h \
  /usr/include/c++/13/mutex /usr/include/c++/13/tuple \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/chrono.h /usr/include/c++/13/ratio \
@@ -164,7 +164,7 @@ CMakeFiles/main.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/unique_ptr.h \
  /usr/include/c++/13/ext/aligned_buffer.h \
  /usr/include/c++/13/ext/concurrence.h /usr/include/c++/13/chrono \
- /home/ubuntu/Desktop/ThreadSafeQueue/include/Queue.hpp \
- /home/ubuntu/Desktop/ThreadSafeQueue/include/Queue.h \
+ /home/rizwan-pc/Desktop/ThreadSafeQueue/include/Queue.hpp \
+ /home/rizwan-pc/Desktop/ThreadSafeQueue/include/Queue.h \
  /usr/include/c++/13/thread /usr/include/c++/13/bits/std_thread.h \
  /usr/include/c++/13/bits/this_thread_sleep.h
