@@ -1,10 +1,10 @@
-Start testing: Jun 22 02:23 PKT
+Start testing: Jun 22 02:44 PKT
 ----------------------------------------------------------
 1/1 Testing: QueueTest
 1/1 Test: QueueTest
 Command: "/home/rizwan-pc/Desktop/ThreadSafeQueue/build/test_Queue"
 Directory: /home/rizwan-pc/Desktop/ThreadSafeQueue/build
-"QueueTest" start time: Jun 22 02:23 PKT
+"QueueTest" start time: Jun 22 02:44 PKT
 Output:
 ----------------------------------------------------------
 Running main() from ./googletest/src/gtest_main.cc
@@ -26,14 +26,14 @@ Running main() from ./googletest/src/gtest_main.cc
 [----------] 6 tests from QueueTest (452 ms total)
 
 [----------] Global test environment tear-down
-[==========] 6 tests from 1 test suite ran. (453 ms total)
+[==========] 6 tests from 1 test suite ran. (452 ms total)
 [  PASSED  ] 6 tests.
 <end of output>
 Test time =   0.46 sec
 ----------------------------------------------------------
 Test Passed.
-"QueueTest" end time: Jun 22 02:23 PKT
+"QueueTest" end time: Jun 22 02:44 PKT
 "QueueTest" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Jun 22 02:23 PKT
+End testing: Jun 22 02:44 PKT
